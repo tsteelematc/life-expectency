@@ -16741,7 +16741,7 @@
           },
           {
             "name": "GDP Per Capita (USD)",
-            "expression": "CALCULATE(AVERAGE(Indicators[GDP per capita (current US$)]),ALL('Year'[Year]))",
+            "expression": "CALCULATE(ROUNDDOWN(AVERAGE(Indicators[GDP per capita (current US$)]),0),ALL('Year'[Year]))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "54a23105-5644-46ec-9060-0c2c68f7483f"
           },
